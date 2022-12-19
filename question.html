@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по философии</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="question_wrapper" id="start_screen">
+        <p class="question_label">
+            Выберите философа о котором идет речь:
+        </p>
+        <ul id="question_list">
+            <li class="list_item">Утверждал, что все состоит из материи и формы</li>
+        </ul>
+        <select id="answers">
+            <option value="">--Выберите философа--</option>
+            <option value="Августин Аврелий">Августин Аврелий</option>
+            <option value="Анаксимандр Милетский">Анаксимандр Милетский</option>
+            <option value="Фома Аквинский">Фома Аквинский</option>
+            <option value="Гераклит Эфесский">Гераклит Эфесский</option>
+            <option value="Дени Дидро">Дени Дидро</option>
+            <option value="Фрэнсис Бэкон">Фрэнсис Бэкон</option>
+        </select>
+        <div class="buttons">
+            <button onclick="check_answer()" class="question_btn">Проверить</button>
+            <button onclick="addq()" class="question_btn" id="add_btn">Подсказка</button>
+        </div>
+    </div>
+
+    <div class="question_wrapper" id="right_screen">
+        <p class="question_label">
+            Ответ верный!
+        </p>
+    </div>
+
+    <div class="question_wrapper" id="false_screen">
+        <p class="question_label">
+            Ответ неверный
+        </p>
+    </div>
+
+</body>
+</html>
